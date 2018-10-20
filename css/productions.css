@@ -44,7 +44,7 @@ img { max-width: 100%; }
 
 /***** Top content *****/
 
-.top-content { padding: 40px 0 170px 0; }
+.top-content { padding: 40px 0 40px 0; height: 600px;}
 
 .top-content .text { color: #fff; }
 .top-content .text h1 { color: #fff; }
