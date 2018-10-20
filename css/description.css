@@ -4,8 +4,9 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  padding-top: 50px;
+  min-height: 300px;
 }
-
 .price {
   color: grey;
   font-size: 22px;
