@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Production House | Team</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/description.css">
   </head>
   <body>
     <header>
@@ -21,76 +21,24 @@
         </nav>
       </div>
     </header>
-    <br>
-    <br>
-    <br>
-    <h1 class="text-center">The Amazing T.V. Series Title</h1>
-    <br>
-    <br>
-    <div class="container">
-      <div class="form-group" style="max-width: 500px; margin:auto;">
-        <input  class="form-control" type="text" name="search" id="search" style="display:block; margin: 0 auto;" placeholder="Search by name or position of responsibility"/>
-      </div>
+    <div class="card">
+      <img src="./img/pulp.jpg" alt="Movie Photograph" style="width:300px;height:300px;float:left;">
+      <span><h1>Pulp Fiction</h1></span>
+      <p class="price">Action, Drama</p>
       <hr>
+      <p class="description">Description</p>
+      <p class="Cast">Cast: abc, abc, abc</p>
+      <p><button>Rating: <span class="rating">8.9/10</span></button></p></span>
     </div>
-    <section id="credits" style="text-align:center; overflow-y: scroll; height: 80vh;">
-      <div>
-        <h3>Female Lead</h3>
-        <h5><em>Ms. Sanika Potdar</em></h5>
-      </div>
-      <div>
-        <h3>Male Lead</h3>
-        <h5><em>Master. Keval Nagda</em></h5>
-      </div>
-      <div>
-        <h3>Male Lead</h3>
-        <h5><em>Master. Anirudh Mukharji</em></h5>
-      </div>
-      <div>
-        <h3>Female Lead</h3>
-        <h5><em>Ms. Sanika Potdar</em></h5>
-      </div>
-      <div>
-        <h3>Male Lead</h3>
-        <h5><em>Mr. XYZ</em></h5>
-      </div>
-      <div>
-          <h3>Female Lead</h3>
-          <h5><em>Ms. Sanika Potdar</em></h5>
-        </div>
-        <div>
-          <h3>Female Lead</h3>
-          <h5><em>Master. Keval Nagda</em></h5>
-        </div>
-        <div>
-          <h3>Female Lead</h3>
-          <h5><em>Ms. Sanika Potdar</em></h5>
-        </div>
-        <div>
-          <h3>Female Lead</h3>
-          <h5><em>Ms. Sanika Potdar</em></h5>
-        </div>
-        <div>
-          <h3>Camera Person</h3>
-          <h5><em>Master. Anirudh Mukharji</em></h5>
-        </div>
-  
-    </section>
+    <br>
+    <div class="card" style="border:2px solid #d3d3d3;">
+    <h3>Reviews:</h3>
+      <p><span id="review1">review 1</span></p><br>
+      <p><span id="review2">review 2</span></p><br>
+      <p><span id="review3">review 3</span></p><br>
+    </div>
     <footer>
       <p>&copy; 2018 Production House</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#search').on('input', function(){
-          var search_query = $(this).val().toLowerCase();
-          $('#credits div').filter(function(){
-            console.log($(this));
-            $(this).toggle($(this).text().toLowerCase().indexOf(search_query) > -1)
-          });
-        });
-      });
-    </script>
   </body>
 </html>
