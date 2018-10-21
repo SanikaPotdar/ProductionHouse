@@ -43,31 +43,35 @@
                 </div>
                 <div class="f1-step active">
                   <div class="f1-step-icon"><i class="fa fa-user"></i></div>
-                  <p>about</p>
+                  <p>Studio</p>
                 </div>
                 <div class="f1-step">
-                  <div class="f1-step-icon"><i class="fa fa-key"></i></div>
-                  <p>account</p>
+                  <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                  <p>Production</p>
                 </div>
                   <div class="f1-step">
-                  <div class="f1-step-icon"><i class="fa fa-twitter"></i></div>
-                  <p>social</p>
+                  <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                  <p>Movies</p>
+                </div>
+                <div class="f1-step">
+                  <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                  <p>TV Series</p>
                 </div>
               </div>
               
               <fieldset>
-                <h4>Tell us who you are:</h4>
+                <h4>Your studio details:</h4>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-first-name">First name</label>
-                  <input type="text" name="f1-first-name" placeholder="First name..." class="f1-first-name form-control" id="f1-first-name">
+                  <label class="sr-only" for="f1-first-name">Name</label>
+                  <input type="text" name="f1-first-name" placeholder="Name" class="f1-first-name form-control" id="f1-first-name">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-last-name">Last name</label>
-                  <input type="text" name="f1-last-name" placeholder="Last name..." class="f1-last-name form-control" id="f1-last-name">
+                  <label class="sr-only" for="f1-last-name">Contact</label>
+                  <input type="number" max="8" name="f1-last-name" placeholder="Contact" class="f1-last-name form-control" id="f1-last-name">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-about-yourself">About yourself</label>
-                  <textarea name="f1-about-yourself" placeholder="About yourself..." class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
+                  <label class="sr-only" for="f1-about-yourself">Address</label>
+                  <textarea name="f1-about-yourself" placeholder="Address" class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
                 </div>
                 <div class="f1-buttons">
                     <button type="button" class="btn btn-next">Next</button>
@@ -75,18 +79,30 @@
               </fieldset>
 
               <fieldset>
-                <h4>Set up your account:</h4>
+                <h4>About your productions:</h4>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-email">Email</label>
-                  <input type="text" name="f1-email" placeholder="Email..." class="f1-email form-control" id="f1-email">
+                  <label class="sr-only" for="f1-email">Bugdet</label>
+                  <input type="number" name="f1-budget" placeholder="Bugdet" class="f1-email form-control" id="f1-email">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-password">Password</label>
-                  <input type="password" name="f1-password" placeholder="Password..." class="f1-password form-control" id="f1-password">
+                  <label class="sr-only" for="f1-password">Release Date</label>
+                  <input type="date" name="f1-release" placeholder="Release Date" class="f1-password form-control" id="f1-password">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-repeat-password">Repeat password</label>
-                  <input type="password" name="f1-repeat-password" placeholder="Repeat password..." class="f1-repeat-password form-control" id="f1-repeat-password">
+                  <label class="sr-only" for="f1-repeat-password">Ratings</label>
+                  <input type="number" max="1" name="f1-ratings" placeholder="Ratings from 1 to 5" class="f1-repeat-password form-control" id="f1-repeat-password">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-email">Review</label>
+                  <textarea name="f1-review" placeholder="Reviews" class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-email">Synopsis</label>
+                  <textarea name="f1-synopsis" placeholder="Synopsis" class="f1-about-yourself form-control" id="f1-about-yourself"></textarea>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-email">Production</label>
+                  <input type="text" name="f1-production" placeholder="Movie or Tv series?" class="f1-email form-control" id="f1-email">
                 </div>
                 <div class="f1-buttons">
                   <button type="button" class="btn btn-previous">Previous</button>
@@ -95,19 +111,53 @@
               </fieldset>
 
               <fieldset>
-                <h4>Social media profiles:</h4>
+                <h4>Movie details:</h4>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-facebook">Facebook</label>
-                  <input type="text" name="f1-facebook" placeholder="Facebook..." class="f1-facebook form-control" id="f1-facebook">
+                  <label class="sr-only" for="f1-facebook">Name</label>
+                  <input type="text" name="f1-name" placeholder="Name of your movie" class="f1-facebook form-control" id="f1-facebook">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-twitter">Twitter</label>
-                  <input type="text" name="f1-twitter" placeholder="Twitter..." class="f1-twitter form-control" id="f1-twitter">
+                  <label class="sr-only" for="f1-twitter">Duration</label>
+                  <input type="number" name="f1-duration" placeholder="Duration no. of hours" class="f1-twitter form-control" id="f1-twitter">
                 </div>
                 <div class="form-group">
-                  <label class="sr-only" for="f1-google-plus">Google plus</label>
+                  <label class="sr-only" for="f1-google-plus">Genre</label>
+                  <input type="text" name="f1-genre" placeholder="Genre of the movie" class="f1-google-plus form-control" id="f1-google-plus">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-google-plus">Image</label>
+                  <input type="file" name="f1-image" accept="image" placeholder="Upload image" class="f1-google-plus form-control" id="f1-google-plus">
+                </div>
+                <div class="f1-buttons">
+                  <button type="button" class="btn btn-previous">Previous</button>
+                  <button type="button" class="btn btn-next">Next</button>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <h4>TV series details:</h4>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-facebook">Name</label>
+                  <input type="text" name="f1-name" placeholder="Name of your Tv series" class="f1-facebook form-control" id="f1-facebook">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-twitter">Seasons</label>
+                  <input type="number" min="1" max="3" name="f1-seasons" placeholder="No. of seasons" class="f1-twitter form-control" id="f1-twitter">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-twitter">Episodes</label>
+                  <input type="number" min="1" max="3" name="f1-episodes" placeholder="No. of episodes" class="f1-twitter form-control" id="f1-twitter">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-google-plus">Time slot</label>
+                  <input type="time" name="f1-slot" placeholder="Time slot" class="f1-google-plus form-control" id="f1-google-plus">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="f1-google-plus">Genre</label>
                   <input type="text" name="f1-google-plus" placeholder="Google plus..." class="f1-google-plus form-control" id="f1-google-plus">
                 </div>
+                <label class="sr-only" for="f1-google-plus">Image</label>
+                  <input type="file" name="f1-image" accept="image" placeholder="Upload image" class="f1-google-plus form-control" id="f1-google-plus">
                 <div class="f1-buttons">
                   <button type="button" class="btn btn-previous">Previous</button>
                   <button type="submit" class="btn btn-submit">Submit</button>
