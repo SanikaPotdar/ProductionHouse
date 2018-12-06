@@ -3,7 +3,6 @@ body{
   padding:0;
   margin:0;
   background-color:#f4f4f4;
-  scroll-behavior: auto;
 }
 
 .container{
@@ -53,6 +52,7 @@ header a{
 header li{
   float:left;
   display:inline;
+  text-decoration:none;
   padding: 0 20px 0 20px;
 }
 
@@ -86,7 +86,7 @@ header a:hover{
 
 #showcase{
   min-height:400px;
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  background:url('../images/showcase.jpg') no-repeat 0 -400px;
   text-align:center;
   color:#ffffff;
 }
@@ -144,7 +144,6 @@ ul#services li{
 footer{
   padding:20px;
   margin-top:20px;
-  margin-bottom: 0px;
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;
